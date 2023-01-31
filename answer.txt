@@ -1,0 +1,39 @@
+What is HTTP?
+HTTP(Hyper Text Transfer Protocol) is a protocol(set of rules) which defines how servers and web browsers communicates.
+
+What is a URL?
+URL(Universal Resource Locators) is refenrence (address) to a web resource
+
+What is DNS?
+DNS (Domain Name Service) turns URLs into IP addresses. 
+
+What is a query string?
+provides “extra information” and allows pass that to URLs with ?key=value&x=1
+
+What are two HTTP verbs and how are they different?
+GET-get data, that is passed with query strings, from the server without changing the server data
+POST- send a body of request to the server that manupulates the serve data.
+
+What is an HTTP request?
+A request from the client to the server. It has to follow HTTP rules.
+
+What is an HTTP response?
+A response from the server to the client. It has to follow HTTP rules.
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+An HTTP header is a field of an HTTP request or response that passes additional context and metadata about the request or response.
+    Request Headers: accpet-encoding, accept-language, accept, cache-control
+    Response Headers: cache-control, content-type, content-lenght date, 
+
+
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+    1-The browser turn the URL into the corresponding IP address usind DNS.
+    2-The browser sends a request with HTTP reuqest headers to the web server following HTTP protocols. 
+    3- The server sends back a response. The response could be HTML or other format like JSON. This response inlcudes status code like 200(succes), 301(redirected), 304(unmodified), 404(notfound). 
+    4- Then, the browser processed the HTML response and make related requests for other resources needed like css file, img uploads, script files. 
+    5-Browser display succesfullly send HTML content. 
+
+
+icanhazdadjoke.com.     0       IN      A       172.67.198.173
+icanhazdadjoke.com.     0       IN      A       104.21.66.15
